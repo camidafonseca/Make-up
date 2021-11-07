@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: rgb(255, 0, 149);
+}
+
+h3 {
+    color: rgb(255, 0, 149);
+}
+
+p {
+    color: white;
+}
+
+
+/*Estilos de Gradientes*/
+
+.gradienteLineal {
+    background-image: linear-gradient(black, rgb(39, 38, 38), rgb(110, 105, 105), rgb(204, 183, 183), rgb(184, 149, 149), pink);
+}
+
+.gradienteTable {
+    background-image: linear-gradient( rgb(221, 180, 180), pink, rgb(231, 158, 170));
+}

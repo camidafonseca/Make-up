@@ -1,0 +1,94 @@
+@import "estilos";
+@import "color";
+@import "responsive";
+@import "texto";
+//@import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css);
+// BEM
+.footercopado {
+    text-align: center;
+    height: 68px;
+    background-color: pink;
+}
+
+.footercopado__left {
+    float: left;
+    width: 100px;
+}
+
+.footercopado__left--letra {
+    font-size: 28px;
+}
+
+.footercopado__mid {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100px;
+    flex-flow: column nowrap;
+}
+
+.footercopado__mid--letra {
+    font-size: 8px;
+}
+
+.footercopado__right {
+    float: right;
+    width: 100px;
+}
+
+.footercopado__right--instagram {
+    font-size: 18px;
+    color: rgb(196, 94, 196);
+}
+
+.footercopado__right--linkedin {
+    font-size: 18px;
+}
+
+// Bucle + condicional.
+@for $var from 1 through 6 {
+    @if $var%2==0 {
+        .contactItem#{$var} {
+            font-style: italic;
+        }
+    }
+    @else {
+        .contactItem#{$var} {
+            font-style: normal;
+        }
+    }
+}
+
+// Mapa
+$contactTypes: ( "whatsapp": #317c63, "email": #6a246a);
+// Each
+@each $contactType,
+$color in $contactTypes {
+    .contact-type-#{$contactType} {
+        color: $color;
+        font-weight: bold;
+    }
+}
+
+// Dado que estoy utilizando bootstrap importandolo mediante CDN,
+// no funciona el @extend. Es por esto que lo dejo comentado para 
+// evitar errores de compilacion. Idem el import que esta en la
+// linea numero 2.
+// Mapa
+$cardColors: ( "1": #c45ec4, "2": #cf3acf, "3": #914291, "4": #965296);
+// Each
+@each $number,
+$color in $cardColors {
+    .card-#{$number} {
+        //    @extend .card;
+        background-color: $color;
+    }
+}
+
+// Bucle
+@for $var from 1 through 4 {
+    .card-body-#{$var} {
+        // @extend .card-body;
+        font-size: 1rem+($var/5);
+    }
+}

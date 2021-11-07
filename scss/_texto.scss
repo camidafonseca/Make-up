@@ -1,0 +1,67 @@
+/* Estilos de Fuentes= Texto*/
+
+.normal {
+    font-size: normal;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.textoMedida {
+    font-size: 20px;
+}
+
+.textoChico {
+    font-size: 8px;
+}
+
+.textoTitulo {
+    font-size: 45px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.aLaDerecha {
+    text-align: right;
+    background-color: rgb(168, 175, 130);
+    width: 60%;
+    height: 300px;
+    border: solid 1 px blueviolet;
+    padding: 5px;
+    display: inline-block;
+}
+
+.aLaIzquierda {
+    text-align: left;
+}
+
+.mayuscula {
+    text-transform: uppercase;
+}
+
+.interlineado {
+    line-height: 2;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.letraBlanca {
+    color: white;
+}

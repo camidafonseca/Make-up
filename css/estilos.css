@@ -33,10 +33,9 @@ h3 {
     color: rgb(255, 0, 149);
 }
 
-
-/* h3 {
-                        color: rgb(255, 0, 149);
-                    }*/
+.fondoContacto {
+    background-color: black;
+}
 
 p {
     color: white;

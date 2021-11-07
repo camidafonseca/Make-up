@@ -222,8 +222,9 @@ img {
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
   grid-template-areas: "form datos";
-  justify-items: center;
-  align-items: center; }
+  align-items: center;
+  display: flex;
+  justify-content: center; }
 
 .form {
   grid-area: form; }
@@ -232,6 +233,7 @@ img {
   grid-area: datos; }
 
 .boxContacto {
+  margin: 5px 50px 60px 50px;
   width: 400px;
   background-image: radial-gradient(pink, white);
   border: solid 15 pink;

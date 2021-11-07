@@ -60,18 +60,18 @@
 
 
 
-
     <h1 class="centrar subrayado animacion">Contact</h1>
     <br>
     <main class="letraBlanca">
 
 
-        <div class="gradienteLineal">
+
+        <div class="fondoContacto">
             <section class="contenedorContact ">
                 <form action=" " class="boxContacto form ">
 
 
-
+                    <!--Formulario-->
                     <label class="contactItem1" for="name ">Name</label>
                     <input type="text" name="name" placeholder="Insert your name" class="input"> </fieldset> <br>
 
@@ -102,27 +102,49 @@
                     <button type="reset" class="btn btn-outline-dark">Clear</button>
 
                 </form>
-
-                <section class="datos boxContacto">
-                    <p class="letraNegra centrar">Please get in touch using the contact details below..</p>
-                    <div class="contact-type-whatsapp">
-                        Whatsapp +541156016211
-                    </div>
-                    <div class="contact-type-email">
-                        Email camiladafonseca7@gmail.com
-                    </div>
-                    <br>
-
-                    <p class="letraNegra centrar"> For new booking enquiries. I will endeavour to get back to you as soon as possible.
-
-                    </p>
-                    <h2 class="centrar letraNegra">Location:</h2>
-                    <p class="centrar letraNegra"> Amsterdam, The Netherlands.</p>
-                </section>
             </section>
         </div>
 
     </main>
+
+    <!--Datos contacto-->
+    <section class="contact-section bg-black ">
+        <div class="bg-black container px-4 px-lg-5 ">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100 gradienteLineal ">
+                        <div class="card-body text-center ">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h3 class="text-uppercase m-0 letraBlanca">Address</h3>
+                            <hr class="my-4 mx-auto" />
+                            <div class=" letraBlanca">Amsterdam, The Netherlands</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100 gradienteLineal">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h3 class="text-uppercase m-0 letraBlanca">Email</h3>
+                            <hr class="my-4 mx-auto" />
+                            <div class="letraBlanca contact-type-email">camiladafonseca7@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100 gradienteLineal">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h3 class="text-uppercase m-0 letraBlanca">Phone</h3>
+                            <hr class="my-4 mx-auto" />
+                            <div class="letraBlanca contact-type-whatsapp">+1 (555) 902-8832</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
 
